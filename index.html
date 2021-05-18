@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="portfolio.js"></script>  
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Krona+One&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Flickity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <title>Kirsty Bryce</title>
+    <link rel="icon" href="Images/icon.png" type="image/png">
+</head>
+<body>
+    <main>
+        <section id='home'>
+            <div class='home-container'>
+                <nav>
+                    <ul id='nav-list'>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div id='home-titles'>
+                    <div id='inner-title-div'>
+                        <h1 id='title'>KIRSTY BRYCE</h1>
+                        <h1 id='small-title'>KIRSTY<br>BRYCE</h1>
+                        <h2 id='subtitle'>COMPUTING GRADUATE<br>WEB DESIGNER & DEVELOPER</h2> 
+                        <h2 id='small-subtitle'>COMPUTING GRADUATE<br>WEB DESIGNER<br>& DEVELOPER</h2> 
+                    </div>
+                </div>
+            </div>
+            <img id='home-banner' src='Images/home-banner.png' alt="Home page banner picture">
+        </section>
+
+        <section id='about'>
+            <div class='custom-container'>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <h2 class='section-title'>ABOUT</h2>
+                        <p class='about-text'>
+                            I’m Kirsty and I’m a web designer and developer from Leuven, Belgium. 
+                            I received a Master’s degree in Computing from Edinburgh 
+                            Napier University in Ocotober 2020, and I also have a Master’s 
+                            degree in Arts & Cultural Management, and a Bachelor's in Audio Production.
+                            For my Computing Master's dissertation I created a prototype of a relaxation 
+                            app using Axure, which you can view <a href='https://kirstybryce.github.io/ZenSounds/#id=t2sqeh&p=home_page' target="_blank">here</a>.
+                            <br>
+                            <br>
+                            My multi-disciplinary background in art and 
+                            computing has allowed me to have skills that can be used 
+                            in different areas of work. I have skills in web design (Figma, Photoshop, Axure) 
+                            and front-end web development (HTML, CSS, JavaScript, Bootstrap, Sematic UI, Webflow, JQuery, React).
+                            <br>
+                            <br>
+                            Other than web development, my interests lay in music, 
+                            dancing, comic books, and video games.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-xl-6">
+                        <div class='doc-links' id='doc-links-lg'>
+                            <a href='./PDF-files/Kirsty-Bryce-CV.pdf' target="_blank">CV</a>
+                            <br>
+                            <br>
+                            <a href='./PDF-files/Computing-Dissertation.pdf' target="_blank">COMPUTING MSC DISSERTATION</a>
+                            <br>
+                            <br>
+                            <a href='./PDF-files/Cultural-Project.pdf' target="_blank">ARTS MANAGEMENT MA PROJECT</a>
+                            <br>
+                            <br>
+                            <a href='./PDF-files/Major-Project.pdf' target="_blank">AUDIO PRODUCTION BA(HONS) DISSERTATION</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12">
+                        <div class='doc-links' id='doc-menu'>
+                            <ul>
+                                <li onclick="openLinksMenu()">LINKS
+                                    <ul id='inner-menu' class='hide-contents'>
+                                        <li><a href='./PDF-files/Kirsty-Bryce-CV.pdf' target="_blank">CV</a></li>
+                                        <li><a href='./PDF-files/Computing-Dissertation.pdf' target="_blank">COMPUTING MSC DISSERTATION</a></li>
+                                        <li><a href='./PDF-files/Cultural-Project.pdf' target="_blank">ARTS MANAGEMENT MA PROJECT</a></li>
+                                        <li><a href='./PDF-files/Major-Project.pdf' target="_blank">AUDIO PRODUCTION BA(HONS) DISSERTATION</a></li>
+                                    </ul>
+                                </li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id='projects'>
+            <h2 class='section-title'>PROJECTS</h2>
+
+            <!-- Flickity carousel -->
+            <div class="carousel" data-flickity='{ "wrapAround": false }'>
+                <div class="carousel-cell">
+                    <a href="https://www.figma.com/proto/EEvuRpnQ2YpXzesesolgKu/Ornamental?node-id=1%3A3&scaling=min-zoom&page-id=0%3A1" target="_blank">
+                        <div class="slide-border">
+                            <img class='carousel-img' alt='Ornamental' src="Carousel/ornamental.png" alt="First slide">
+                        </div>
+                    </a>
+                    <p class='project-caption'><span class='project-title'>Ornamental</span> is a prototype of a vintage item store I created using Figma</p>
+                </div>
+
+                <div class="carousel-cell">
+                    <a href="https://chat-app-homepage-123.webflow.io//" target="_blank">
+                        <div class="slide-border">
+                            <img class='carousel-img' alt='Chat App' src="Carousel/chat-app.png" alt="Second slide">
+                        </div>
+                    </a>
+                    <p class='project-caption'><span class='project-title'>ChatApp</span> is a responsive prototype of a messaging site I created using Webflow</p>
+                </div>
+
+                <div class="carousel-cell">
+                    <a href="https://www.figma.com/proto/M88Xthy33uF4QLcWgYOuTs/MoveMe-Fitness-App?node-id=1%3A41&scaling=min-zoom&page-id=0%3A1" target="_blank">
+                        <div class="slide-border">
+                            <img class='carousel-img' alt='Alex Portfolio' src="Carousel/moveme.png" alt="Third slide">
+                        </div>
+                    </a>
+                    <p class='project-caption'><span class='project-title'>MoveMe</span> is a prototype of a fitness social site I created using Figma</p>
+                </div>
+            </div>
+            <!-- Flickity carousel end -->
+
+        </section>
+    </main>
+
+    <a id="back-to-top" title="Back to top" class='hide'>
+        <span class="material-icons md-48">
+            arrow_circle_up
+        </span>
+    </a>
+
+    <footer id='contact'>
+        <div class="custom-container">
+            <h2 class='section-title'>CONTACT</h2>
+            <div class="row" id='contact-links'>
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                <a href="mailto:kirstybryce25@gmail.com">kirstybryce25@gmail.com</a>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3" id='phone-div'>
+                <a href="tel:+32492849653">+32 492 84 96 53</a>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                <a href='https://www.linkedin.com/in/kirsty-bryce-1283b9127/' target="_blank">LinkedIn</a>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3" id='location-div'>
+                Leuven, Belgium
+              </div>
+            </div>
+          </div>
+    </footer>
+</body>
+</html>
