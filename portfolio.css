@@ -138,6 +138,16 @@ section {
     max-width: 600px;
 }
 
+.about-text a {
+    color: #151515;
+}
+
+.about-text a:hover {
+    color: #8D7B73;
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
 .doc-links {
     position: absolute;
     max-width: 329px;
