@@ -197,6 +197,13 @@ section {
     height: 375px;
 }
 
+@media (min-width: 50px) and (max-width: 576px) {
+    .carousel-img {
+        width:600px;
+        height: 250px;
+    }
+}
+
 .project-caption {
     margin-top: 30px;
     font-family: Karla;
