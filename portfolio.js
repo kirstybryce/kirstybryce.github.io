@@ -42,3 +42,7 @@ function openLinksMenu() {
     const openMenu = document.getElementById('inner-menu');
     openMenu.classList.toggle("hide-contents");
 };
+
+window.addEventListener( 'load', function() {
+    flkty.resize();
+  });
